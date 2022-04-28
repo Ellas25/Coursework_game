@@ -1,4 +1,8 @@
 import pygame #opens the file called pygame
+import buttons
+import dice
+
+
 background = (250, 250, 250)#at the moment I am setting this to 250,250,250 untill I can get the window to open
 width = (500) # width may change to fill the whole of the screen
 height = (400) # height may change to fill the whole of the screen
