@@ -19,11 +19,11 @@ def main_menu():
             
 def mouse():
     # this where the positions of mouse will be stored
-      if buttons.button3("STOP Music", mouse[0], mouse[1], 900, 0, 200, 50, constant.red_color, constant.purple_color, 25):
+      if buttons.button3("STOP Music", mouse[0], mouse[1], 900, 0, 200, 50, rgb.teal, rgb.green, 25):
                 pygame.mixer.music.pause()
-      if buttons.button3("PLAY Music", mouse[0], mouse[1], 900, 85, 200, 50, constant.purple_color, constant.grey, 25):
+      if buttons.button3("PLAY Music", mouse[0], mouse[1], 900, 85, 200, 50, rgb.red, rgb.blue, 25):
                 pygame.mixer.music.unpause()
-      if buttons.button3("CREDITS AND COPYWRIGHT", mouse[0], mouse[1], 900, 160, 200, 50, constant.grey_color, constant.red_color, 25):
+      if buttons.button3("CREDITS AND COPYWRIGHT", mouse[0], mouse[1], 900, 160, 200, 50, rgb.grey, rgb.lime, 25):
                 credits_page()
             pygame.display.update()
             
@@ -35,7 +35,7 @@ def credits_page():
                 if event.key == pygame.K_ESCAPE:
                     pygame.quit()
        mouse()
-        if buttons.centre_button("Back", mouse[0], mouse[1], constant.WIDTH / 2 - 100, 700, 200, 50, constant.grey_color, constant.white_color, 25, 20):
+        if buttons.centre_button("Back", mouse[0], mouse[1], constant.WIDTH / 2 - 100, 700, 200, 50,rgb.yellow, rgb.lime, 25, 20):
             main_menu()
 
         pygame.display.update()
