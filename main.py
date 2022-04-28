@@ -6,6 +6,9 @@ screen = pygame. display. set_mode((width, height))
 screen.fill(background)
 pygame.display.flip()
 
+gameDisplay = pygame.display.set_mode((width, height))
+pygame.display.set_caption('Snake And Ladder') # title on top of the window
+
 open = True
 while open:
   for event in pygame.event.get():
